@@ -8,32 +8,36 @@ import store from './redux/store'
 import { Provider } from 'react-redux';
 import axios from 'axios'
 import { Auth0Provider } from '@auth0/auth0-react'
+import { ChakraProvider } from '@chakra-ui/react'
 //----------------Auth0 Config----------------------------
 const domain = 'dev-18zov1enqjrx8hn7.us.auth0.com';
-const clientId = 'LqqBa9zF6gjJ2lwcrNYsAtYpikXifzQZ'; 
+const clientId = 'LqqBa9zF6gjJ2lwcrNYsAtYpikXifzQZ';
 
 // para el deploy las variables de arriba, para local las de abajo
 
 // const domain = 'dev-18zov1enqjrx8hn7.us.auth0.com';
 // const clientId = 'dC62CcwF4rJihASZzkZ7ZTixIGGoRtao';
 
- axios.defaults.baseURL = 'https://gusto-pf-production.up.railway.app'
+axios.defaults.baseURL = 'https://gusto-pf-production.up.railway.app'
 
 //  axios.defaults.baseURL = 'http://localhost:3001'
 
 
 ReactDOM.render(
-  <Auth0Provider
-    domain={domain}
-    clientId={clientId}
-    redirectUri={window.location.origin}
-  >
-    <Provider store={store}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </Provider>
-  </Auth0Provider>,
+  <ChakraProvider>
+
+    <Auth0Provider
+      domain={domain}
+      clientId={clientId}
+      redirectUri={window.location.origin}
+    >
+      <Provider store={store}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </Provider>
+    </Auth0Provider>
+  </ChakraProvider>,
   document.getElementById("root")
 );
 // ReactDOM.render(

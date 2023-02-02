@@ -5,7 +5,7 @@ import {
 	Marker,
 	GoogleApiWrapper,
 	OverlayView
-} from "google-maps-react-17";
+} from "google-maps-react";
 import Sucursales from "../GoogleMaps/Sucursales";
 import rectangle from "../../assets/redRectangle.jpg";
 import "./GoogleMaps.css";

@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #ededed;
 }
 
@@ -6,7 +6,11 @@ body{
   width: 23rem;
   object-fit: contain;
   transition: all 0.3s ease-in-out;
-  
+
+}
+
+.imageCart{
+  width: 9rem;
 }
 
 
@@ -20,16 +24,24 @@ body{
   margin-right: 2rem;
   margin-bottom: 1rem;
   font-family: 'Oswald';
-  z-index: 1;
   
+
 }
-.card-title{
+
+.card-title {
   font-weight: bold;
 }
 
-.card-body{
+.card-body {
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+@media screen {
+  .card {
+    width: 100%;
+    
+  }
 }

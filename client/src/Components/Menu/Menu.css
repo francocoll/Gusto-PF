@@ -5,10 +5,17 @@
     src: url('../../assets/RecoletaAlt-Bold.ttf');
 }
 
+body {
+    height: 100%;
+}
+
+
 .recoleta {
     font-family: 'Recoleta';
     color: red;
 }
+
+
 
 .flechas {
     width: 14rem;
@@ -22,19 +29,13 @@
     margin-bottom: .2rem;
 }
 
-.sucursal {
-    font-size: .9rem;
-    font-family: 'Oswald';
-    font-weight: 900;
-    border: none;
-    background-color: transparent;
-}
+
 
 
 
 
 .menu-body {
-    margin-top: 8%;
+    
     background-color: #ededed;
     width: 100%;
 }
@@ -72,11 +73,23 @@
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
-    margin-top: 5%;
+    margin: 5%;
+    gap: 5rem;
 
 
 }
 
 .listGroup:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .cardContainer {
+        grid-template-columns: 1fr;
+
+    }
+
+    .listGroup {
+        display: none;
+    }
 }

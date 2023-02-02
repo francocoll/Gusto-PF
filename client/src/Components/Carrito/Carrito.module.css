@@ -42,3 +42,22 @@
 .cajasnegras {
     width: 10%;
 }
+
+/*fullscreen cart*/
+@media screen and (max-width: 1024px) {
+    .body {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .tuyo {
+        margin: 1rem;
+    }
+    .cajasnegras {
+        width: 5%;
+    }
+    
+    
+    
+}

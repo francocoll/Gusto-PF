@@ -2,11 +2,13 @@
     font-family: 'Recoleta';
     src: url('../../assets/RecoletaAlt-Bold.ttf');
 }
+
 .imagen {
     width: 10rem;
     height: 10rem;
 
 }
+
 .container {
     display: flex;
     margin: 1.5rem;
@@ -38,4 +40,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .imagen {
+        width: 60rem;
+        height: 60rem;
+    }
 }
