@@ -17,13 +17,7 @@ import CarritoItem from "../Carrito/CarritoItem";
 
 
 
-// 	const email = window.localStorage.getItem("userEmail");
 
-// 	useEffect(() => {
-// 		dispatch(userProfile(email));
-// 	}, [dispatch, email]);
-
-// 	const user = useSelector((state) => state.user);
 
 
 
@@ -189,9 +183,28 @@ import CarritoItem from "../Carrito/CarritoItem";
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Nav.css";
+import { userProfile } from "../../redux/actions";
 
 function Navbar() {
 	const dispatch = useDispatch();
+	const user = useSelector((state) => state.user);
+	const email = window.localStorage.getItem("userEmail");
+
+	useEffect(() => {
+		dispatch(userProfile(email));
+	}, [dispatch, email]);
+
+	const userAtHome = () => {
+		if (window.location.pathname === "/") return true;
+	};
+
+	const userAtSucursales = () => {
+		if (window.location.pathname === "/sucursales") return true;
+	};
+	const userAtMisCompras = () => {
+		if (window.location.pathname === "/miscompras") return true;
+	};
+
 	const userAtMenu = () => {
 		if (window.location.pathname === "/menu") return true;
 	};
@@ -214,10 +227,30 @@ function Navbar() {
 		<header>
 			<img src={logo} alt='nada' />
 			<nav ref={navRef}>
-				<Link to="/" onClick={hideNavbar}>Home</Link>
-				<Link to="/menu" onClick={hideNavbar}>Menu</Link>
-				<Link to="/sucursales" onClick={hideNavbar}>Sucursales</Link>
-				<Link to="/perfil" onClick={hideNavbar}>About os</Link>
+				<Link
+					to="/"
+					onClick={hideNavbar}
+					className='nav-link'>
+					HOME
+				</Link>
+				<Link
+					to="/menu"
+					className='nav-link'
+					onClick={hideNavbar}>
+					MENU
+				</Link>
+				<Link
+					className='nav-link'
+					onClick={hideNavbar}
+					to="/sucursales">
+					SUCURSALES
+				</Link>
+				<Link
+					to="/perfil"
+					onClick={hideNavbar}
+					>
+					NOSOTROS
+				</Link>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

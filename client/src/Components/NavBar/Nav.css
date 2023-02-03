@@ -168,6 +168,7 @@
 
 }
 
+
 :root {
 	--mainColor: #c7cbd8;
 	--mainColorLight: #5767aa;
@@ -183,6 +184,12 @@ header {
 	padding: 0 2rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
+}
+
+nav {
+	display: flex;
+	font-size: 1.4rem;
+	font-family: 'Oswald', sans-serif;
 }
 
 nav a {
@@ -229,6 +236,7 @@ img {
 	header img {
 		display: none;
 	}
+	
 
 	header nav {
 		position: fixed;
