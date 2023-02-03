@@ -4,8 +4,8 @@
 }
 
 .imagen {
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
 
 }
 
@@ -17,6 +17,12 @@
 
 .buttonDel {
     background-color: aliceblue;
+}
+
+.carritoInfo span {
+    font-size: 1.6rem;
+    font-family: 'Recoleta';
+    color: black;
 }
 
 .carritoInfo p {
@@ -42,9 +48,11 @@
     justify-content: center;
 }
 
+
 @media screen and (max-width: 1024px) {
     .imagen {
-        width: 60rem;
-        height: 60rem;
+        display: block;
+        width: 15rem;
+        height: 15rem;
     }
 }

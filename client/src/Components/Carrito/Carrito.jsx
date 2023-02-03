@@ -25,9 +25,7 @@ const Carrito = ({ isOpen, onClose, children }) => {
                         <div>LO TUYO</div>
                         <button type='button' className='btn btn-dark' onClick={onClose}>X</button>
                     </div>
-                    <div className={styles.cajasnegras}>
-                        <img src={cajasnegras} alt="cajas" />
-                    </div>
+                    <div className={styles.linea}></div>
                     {children}
                 </div>
 

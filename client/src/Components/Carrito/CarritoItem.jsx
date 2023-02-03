@@ -25,7 +25,7 @@ const CartItem = ({ id, name, price, image, description, total, quantity, delOne
             <div className={styles.carritoInfo}>
                 <div className={styles.carritoName}>
                     <p>{name}</p>
-                    <p>${price * quantity}</p>
+                    <span>${price * quantity}</span>
                 </div>
                 <div className={styles.carritoButtons}>
                     <button onClick={() => { dispatch(delFromCart(id)) }}> - </button>
