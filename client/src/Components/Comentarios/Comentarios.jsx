@@ -1,6 +1,7 @@
 import React from "react";
 import "./Comentarios.css";
-import { BsStar } from "react-icons/bs";
+
+import { FaStar } from "react-icons/fa";
 
 const Comentarios = () => {
 	return (
@@ -23,16 +24,16 @@ const Comentarios = () => {
 						</div>
 						<div className="ratings">
 							<i className="fa fa-star">
-								<BsStar />
+								<FaStar />
 							</i>
 							<i className="fa fa-star">
-								<BsStar />
+								<FaStar />
 							</i>
 							<i className="fa fa-star">
-								<BsStar />
+								<FaStar />
 							</i>
 							<i className="fa fa-star">
-								<BsStar />
+								<FaStar />
 							</i>
 						</div>
 					</div>
@@ -56,19 +57,19 @@ const Comentarios = () => {
 						</div>
 						<div className="ratings">
 							<i className="fa fa-star">
-								<BsStar />
+								<FaStar />
 							</i>
 							<i className="fa fa-star">
-								<BsStar />
+								<FaStar />
 							</i>
 							<i className="fa fa-star">
-								<BsStar />
+								<FaStar />
 							</i>
 							<i className="fa fa-star">
-								<BsStar />
+								<FaStar />
 							</i>
 							<i className="fa fa-star">
-								<BsStar />
+								<FaStar />
 							</i>
 						</div>
 					</div>
@@ -93,16 +94,16 @@ const Comentarios = () => {
 
 						<div className="ratings">
 							<i className="fa fa-star">
-								<BsStar />
+								<FaStar />
 							</i>
 							<i className="fa fa-star">
-								<BsStar />
+								<FaStar />
 							</i>
 							<i className="fa fa-star">
-								<BsStar />
+								<FaStar />
 							</i>
 							<i className="fa fa-star">
-								<BsStar />
+								<FaStar />
 							</i>
 						</div>
 					</div>

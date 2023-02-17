@@ -8,6 +8,8 @@ import Carousel from "../Carousel/Carousel";
 import Footer from "../Footer/Footer";
 import homevideo from "../../assets/homeVideo2.mp4";
 import Comentarios from "../Comentarios/Comentarios";
+import { TbTruckDelivery } from 'react-icons/tb'
+import { Link } from "react-router-dom";
 
 // import { userLogin } from '../../redux/actions';
 
@@ -50,11 +52,19 @@ const Home = () => {
 	return (
 		<div>
 			<section className={styles.homeContainer}>
-				<video className={styles.video} autoPlay="autoplay" muted loop>
-					<source src={homevideo} type="video/mp4" />
-				</video>
+				<div>
+					<h1> TE DAMOS LO TUYO, A DOMICILIO.</h1>
+					<p>
+						{" "}
+						Explora nuestras opciones! <br /> ¡Y disfruta de tu comida
+						favorita!
+					</p>
+					<Link to="/menu">
+						<button className='btn btn-danger'>VER MENÚ</button>
+					</Link>
+				</div>
+				
 			</section>
-
 			<section className={styles.sectionCarousel}>
 				<Carousel />
 			</section>

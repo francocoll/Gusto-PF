@@ -94,7 +94,94 @@
 }
 
 .homeContainer {
-	height: 56.5rem;
-	background-color: #ededed;
-	overflow-x: hidden;
+	background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20190828/pngtree-hamburger-background-with-meat-cheese-and-salad-flat-style-cartoon-illustration-image_307739.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 1;
+	height: 47rem;
+
+}
+
+.homeContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.homeContainer div{
+	margin-left: 10rem;
+	
+}
+
+.homeContainer h1{
+	font-size: 3rem;
+	font-family: 'Oswald';
+}
+
+.homeContainer p {
+	font-size: 1.5rem;
+	font-family: 'Oswald';
+}
+
+.homeContainer button {
+	background-color: var(--main-red);
+	color: white;
+	font-size: 1.5rem;
+	font-family: 'Oswald';
+	border: none;
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+
+.allInfo {
+	display: flex;
+	flex-direction: column;
+}
+
+.info1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+	margin-top: 8rem;
+}
+
+.info1 img {
+	width: 35rem;
+	border-radius: 20px;
+}
+
+.info1 h1 {
+	font-family: "Oswald";
+	font-weight: 900;
+	font-size: 3rem;
+	width: 70%;
+}
+
+.info2 {
+	display: flex;
+	justify-content: center;
+	margin-top: 5rem;
+}
+
+.info2Container {
+	width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+	.info1 {
+		flex-direction: column;
+	}
+
+	.info1 img {
+		width: 100%;
+	}
+
+	.info1 h1 {
+		width: 100%;
+	}
+
+	
 }

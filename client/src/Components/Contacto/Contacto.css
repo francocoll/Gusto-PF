@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
+body{
+    
+    background-color: #ededed;
+}
 
 .containerForm{
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 10%;
+    align-items: center;
     flex-direction: column;
 
     

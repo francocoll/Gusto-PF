@@ -20,6 +20,8 @@ import Users from "./Components/Users/Users";
 import CheckOutSucces from "./Components/CheckOutSucces/CheckOutSucces";
 import Cloudinary from "./Components/Cloudinary/Cloudinary";
 import Contacto from "./Components/Contacto/Contacto";
+import Team from "./Components/Team/Team";
+
 
 function App() {
 	return (
@@ -43,6 +45,7 @@ function App() {
 				<Route exact path="/login" element={<LoginButton />} />
 				<Route exact path="/checkout" element={<CheckOutSucces />} />
 				<Route exact path="/miscompras" element={<UserHistory />} />
+				<Route exact path="/nosotros" element={<Team />} />
 				<Route
 					exact
 					path="/editarperfilusuario"
