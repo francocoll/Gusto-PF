@@ -31,7 +31,7 @@ const CheckOutSucces = () => {
     quantity: quantity
   }
   const sendEmail = async () => {
-    await axios.post("http://gusto-pf-production.up.railway.app/api/mail/checkout", { to, name, detail })
+    await axios.post("http://gusto-pf-franco.up.railway.app/api/mail/checkout", { to, name, detail })
   };
   sendEmail();
   return (
