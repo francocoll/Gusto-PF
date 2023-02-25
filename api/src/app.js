@@ -4,8 +4,8 @@ const express = require("express");
 const helmet = require("helmet");
 const { auth, requiresAuth } = require("express-openid-connect");
 const path = require("path");
-// const jade = require("jade");
-/* const redirectHttps = require("redirect-https"); */
+const jade = require("jade");
+const redirectHttps = require("redirect-https");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const cors = require("cors");
@@ -16,7 +16,7 @@ const server = express();
 
 
 server.use(helmet());
-// server.set('view engine', 'jade');
+server.set('view engine', 'jade');
 server.use(cors());
 
 const authConfig = {
