@@ -47,4 +47,4 @@ GUSTO es una aplicación diseñada para una hamburgueseria de Rio Cuarto, Córdo
 
 
 
-https://ganasdegusto.vercel.app/
+https://gusto-franco.vercel.app/
