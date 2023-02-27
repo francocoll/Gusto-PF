@@ -245,12 +245,12 @@ function Navbar() {
 					to="/sucursales">
 					SUCURSALES
 				</Link>
-				<Link
+				{/* <Link
 					to="/perfil"
 					onClick={hideNavbar}
 					>
 					NOSOTROS
-				</Link>
+				</Link> */}
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
